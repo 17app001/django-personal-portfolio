@@ -8,3 +8,6 @@ class Blog(models.Model):
     information = models.TextField(blank=True)
     image_url = models.CharField(max_length=255,blank=True)
     url = models.CharField(max_length=255,blank=True)
+
+    def __str__(self):
+        return self.title , self.create_date
