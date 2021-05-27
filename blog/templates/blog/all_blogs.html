@@ -1,0 +1,16 @@
+<h1>Hello blogs!</h1>
+
+<!-- <h2>{{ blogs }}</h2> -->
+
+{% for blog in blogs %}
+    <h2><a href="{{ blog.url }}">{{ blog.title }}</a></h2>
+    <h4>{{ blog.sub_title }} <br>
+        {{ blog.create_date }}</h4>
+
+    <img src="{{ blog.image_url }}" width=800 height=400>
+    <p>{{ blog.information }}</p>
+    <hr>
+
+{% endfor %}
+
+
